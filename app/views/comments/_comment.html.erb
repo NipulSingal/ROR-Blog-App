@@ -1,0 +1,4 @@
+<li>
+    <%= comment.body %> by <strong> <%= comment.commenter %> </strong>
+    <%= link_to (raw("<img class=icon src=https://cdn.iconscout.com/icon/premium/png-512-thumb/delete-1432400-1211078.png />")), [comment.article, comment], method: :delete, data: { confirm: "Are you sure?" } %>
+</li>
